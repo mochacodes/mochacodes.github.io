@@ -1,0 +1,117 @@
+<!--
+File: index.html
+GUI Assignment: Creating Your First Web Page
+Wenjin Zhou, UMass Lowell Computer Science, wzhou@cs.uml.edu
+Copyright (c) 2021 by Wenjin. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by WZ on July 7, 2021 at 9:23 AM
+
+a. Raj Ray
+b. June 5, 2025
+c. This is a basic website for GUI1 HW1 that illustrates basic html concepts.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raj's Website</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); </style>
+</head>
+<body>
+    <!--This header section is just a basic navigation
+    bar that sticks to the top of the page with basic file linking.
+    the <ul> is an unordered list and the <li> tags are list indices/elements
+    and the <a> tags are just hyperlinks-->
+  <header>
+    <h1>Raj's Garage</h1>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Garage</a></li>
+        <li><a href="./guides.html">Guides</a></li>
+        <li><a href="./about.html">Ranks</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./times.html">Homework3 - Times</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--I feel like the only thing worth explaining here is how i use the 
+    container class. I just use basic flexbox and kind of nest them so that 
+    the image lines up with the text, and then the text inside the second flexbox stack vertically. 
+    I make note of this in the css file iirc.-->
+    <section>
+      <h2>Display Cars</h2>
+      <h4>Here are my favorite cars to play!</h4>
+      <p>These range from some classics, to some modern juggernauts.</p>
+      <Div class="container">
+        <img src="./images/911.png" class="displaycar" alt="911">
+        <div class="container2">
+          <h2>Porsche 911 Turbo</h2>
+          <p>First introduced during the 2023 collaboration
+             with Porsche for the game’s anniversary, it features 
+             the Dominus hitbox, making it ideal for powerful flicks
+              and strong shots. This beauty blends real world fashion,
+               with in-game performace, to absolutely dominate the pitch!</p>
+        </div>
+      </Div>
+      <Div class="container">
+        <img class="displaycar" src="./images/fen.png" alt="fennec">
+        <div class="container2">
+          <h2>Fennec</h2>
+          <p>Released in July 2019 from the “Totally Awesome” Crate, it uses 
+            the same Octane hitbox known for its balanced handling and aero-friendly 
+            profile. This car is loved because it is considered to be a more accurate version 
+            of the game's most popular car, the octane.</p>
+        </div>
+      </Div>
+      <Div class="container">
+        <img class="displaycar" src="./images/rx7.png" alt="mazda"> 
+        <div class="container2">
+          <h2>Mazda RX-7</h2>
+          <p>The Fast & Furious Mazda RX‑7 in Rocket League is an Exotic licensed battle‑car 
+            inspired by Han’s iconic Veilside-tuned FD from Tokyo Drift. It uses a modified Breakout hitbox, 
+            slightly shifted rearward to better match the car’s sleek model. This car is notorious for not matching
+          the official hitbox perfectly, due to an extended front lip. However, it is still one of the most stylish cars on the pitch.</p>
+        </div>
+      </Div>
+      <Div class="container">
+        <img class="displaycar" src="./images/silvia.png" alt="silvia">
+        <div class="container2">
+          <h2>Nissan Silvia</h2>
+          <p>All time classic of the real-life JDM scene, the Silvia is naturally one of the sleekest cars in the game.</p>
+        </div>
+      </Div>
+      <Div class="container">
+        <img class="displaycar" src="./images/vtec.png" alt="jeep">
+        <div class="container2">
+          <h2>Jeep Wrangler</h2>
+          <p>Dinosaur Car. Need I say less?</p>
+        </div>
+      </Div>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; Raj's Desk</p>
+    <p>
+      <a href="https://jigsaw.w3.org/css-validator/check/referer"> 
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+      </a>
+    </p>
+    <p>
+      <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" />
+      </a>
+    </p>
+  </footer>
+</body>
+</html>

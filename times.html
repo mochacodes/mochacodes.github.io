@@ -1,0 +1,74 @@
+<!--
+Raj Ray
+June 15, 2025
+uml ID: 01978862
+raj_ray@student.uml.edu
+github: mochacodes
+-->
+
+<!--defer in the <script> tag below specifies that the script is downloaded
+     in parallel to parsing the page, and executed after the page has finished parsing.-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/times.css">
+    <script src="./times.js" defer></script>
+    <title>Times Table</title>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); </style>
+  </head>
+
+  <body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Garage</a></li>
+                <li><a href="./guides.html">Guides</a></li>
+                <li><a href="./about.html">Ranks</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./times.html">Homework3 - Times</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <div class="container">
+        <!--This is for the input form, takes integers only-->
+        <div class="inputs" id="inputs">
+            <form>
+                <div>
+                    <p>Min Column Value (integer):</p>
+                    <input id="minCol" type="number">
+                </div>
+                <div>
+                    <p>Max Column Value (integer):</p>
+                    <input id="maxCol" type="number">
+                </div>
+                <div>
+                    <p>Minimum Row Value (integer):</p>
+                    <input id="minRow" type="number">
+                </div>
+                <div>
+                    <p>Maximum Row Value (integer):</p>
+                    <input id="maxRow" type="number">
+                </div>
+            </form>
+            <div class="button-container">
+                <button class="create" type="button" onclick="createTable()">Submit</button>
+            </div>
+        </div>
+        <!--This is the div that holds the chart-->
+        <div class="chart">
+            <table id="table1">
+
+            </table>
+        </div>
+    </div>
+    
+
+
+  </body>
+</html>

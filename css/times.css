@@ -1,0 +1,98 @@
+/*
+Raj Ray
+June 15, 2025
+uml ID: 01978862
+raj_ray@student.uml.edu
+github: mochacodes
+*/
+
+/* General/Text rules*/
+body {
+    background-color: #EFE4D2;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #EFE4D2;
+    background-color: #254D70;
+}
+
+#errorMsg {
+    color: #ff4800;
+    margin: 0px;
+    padding: 10px;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* rules for the inputs form*/
+.inputs {
+    background: #254D70;
+    max-height: 200px;
+}
+
+.inputs div {
+    padding: 10px;
+    background: #254D70;
+}
+
+input {
+    border-color: #131D4F;
+    border-width: 4px;
+}
+
+/*Button rules*/
+.button-container {
+    text-align: center;
+}
+
+button {
+    font-size: 18px;
+    padding: 15px;
+    border: transparent;
+    background-color: #131D4F;
+    color: #EFE4D2;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0749f0;
+}
+
+
+/*table/chart rules*/
+
+.chart {
+    margin: 50px;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+th{
+    background-color: #254D70;
+    color: #eee6d8;
+}
+
+tr:nth-child(even) td:nth-child(odd),
+tr:nth-child(odd) td:nth-child(even) {
+    background-color: #ff4800;
+}
+
+table, td, th {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+}
