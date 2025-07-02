@@ -1,0 +1,183 @@
+/*Raj Ray
+July 4, 2025
+uml ID: 01978862
+raj_ray@student.uml.edu
+github: mochacodes */
+
+/*universal rule for my sanity*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#headerContainer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #012247;
+}
+
+nav ul li {
+    margin: 2px 15px;
+}
+
+nav ul li a {
+    color: #5be4ff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+
+/* General Rules*/
+html {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+p {
+    display: inline;
+    color: #fff;
+    padding: 0.2rem;
+    font-size: 1rem;
+}
+
+header, header h1{
+    /* background: #254D70; */
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.75rem;
+}
+
+footer {
+    /* background: #254D70; */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.875rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #254D70, #ecc793);
+}
+
+main {  
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0.5rem;
+    padding: 1rem 1rem;
+    background: #23234d;
+    border-radius: 8px;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    margin: 5px 20px;
+    cursor: pointer;
+    background: #171f4d;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 18px;
+}
+
+/* CONTAINERS */
+.container {
+    flex: 1;
+    display: flex;
+    margin: 0.2rem 0.2rem;
+    padding: 1rem 1rem;
+    background: linear-gradient(45deg, #254D70, #DED3C4);
+    border-radius: 8px;
+}
+
+.scoreContainer {
+    display: flex;
+    margin: 10rem 2rem 2rem 2rem;
+    padding: 1rem 1rem;
+    background: linear-gradient(45deg, #254D70, #ecc793);
+    border-radius: 8px;
+}
+
+#boardCont {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(15, 80px);
+    grid-auto-rows: 0px;
+    gap: 0px;
+    margin-top: 2rem;
+    width: fit-content;
+}
+
+.cell {
+    border: 2px solid #000000;
+    background: linear-gradient(45deg, #254D70, #DED3C4);
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#hand {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*SPECIAL TILES*/
+#dletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../assets/dl.png);
+}
+
+#dword {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../assets/dw.png);
+}
+
+#dword, #dletter {
+    font-size: larger;
+    color: #ffffff;
+}
+
+/*Random ones*/
+.Tile {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 75px;
+    cursor: grab;
+}
+
+#submit {
+    margin: 10rem;
+}
+

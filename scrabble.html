@@ -1,0 +1,71 @@
+<!--
+Raj Ray
+July 4, 2025
+uml ID: 01978862
+raj_ray@student.uml.edu
+github: mochacodes -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Scrabble</title>
+        <link rel="icon" href="favicon.ico" />
+        <link rel="stylesheet" href="./css/scrabble.css" />
+        <link rel="icon" type="image/x-icon" href="./assets/scrabble5068.jpg">
+    </head>
+    <body>
+        <header>
+            <div id="headerContainer">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Garage</a></li>
+                        <li><a href="./guides.html">Guides</a></li>
+                        <li><a href="./about.html">Ranks</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./times.html">Homework3 - Times</a></li>
+                        <li><a href="./scrabble.html">Homework5 - Scrabble</a></li>
+                    </ul>
+                </nav>
+                <div id="scrabbleHeader">
+                    <h1>Raj's Scrabble Game (Demo)</h1>
+                    <button id="newHand">Draw New Hand</button>
+                    <button id="reset">Reset Game</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container" id="boardCont">
+                <div class="scoreContainer" id="scoreboard">
+                    <p id="roundScore">Potential Score: </p>
+                    <p id="totalScore">Total Score: </p>
+                </div>
+                <div id="board">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell" id="dword"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell" id="dletter"></div>
+                    <div class="cell"></div>
+                    <div class="cell" id="dletter"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell" id="dword"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <button id="submit">Submit</button>
+            </div>
+            <div class="container" id="hand"></div>
+        </main>
+        <footer>
+            <p>&copy; Raj Ray</p>
+        </footer>
+        <script type="module" src="./JS/scrabble.js"></script>
+    </body>
+</html>

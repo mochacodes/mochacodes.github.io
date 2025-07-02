@@ -6,6 +6,33 @@ raj_ray@student.uml.edu
 github: mochacodes
 */
 
+header {
+    background: #002B5B;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #012247;
+}
+
+nav ul li {
+    margin: 2px 15px;
+}
+
+nav ul li a {
+    color: #5be4ff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+
+
 /* General/Text rules*/
 body {
     background-color: #EFE4D2;
